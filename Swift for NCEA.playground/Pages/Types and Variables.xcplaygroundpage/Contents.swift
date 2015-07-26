@@ -35,6 +35,7 @@ var myNumber = 1
 var myDecimalNumber = 2.4
 var myString = "Hello"
 var myCharacter:Character = "a"
+var myBoolean = true
 
 /*:
 You will notice you can add a colon and the type name after the variable name to enforce a type, however, most of the time, Swift is smart enough to guess
@@ -60,21 +61,16 @@ Just capitalise the first letter of each word, except the first word.
 
 ## Printing Variables
 
-To print a variable, just type the variable name:
-
+To print a variable, just type the variable name inside the print() function. Print is a *function* that takes a *string* as input. Since `firstName` is a string, it's fine to pass this in directly.
 */
-
 
 print(firstName)
 
 /*:
-To print a variable with text, put the varible inside a `\()` section, like `\(myVariable)` - This will insert it at that place in the output.
+To print a variable with text, put the varible inside a `\()` section, like `\(myVariable)` - This will insert it at that place in the output. If the variable isn't a string, it will force it into one.
 */
 
-print("Hi, my name is \(firstName)!")
-
-
-
+print("Hi, my name is \(firstName)! I am \(22) years old.")
 
 
 
